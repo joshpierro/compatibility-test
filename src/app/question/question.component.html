@@ -1,0 +1,45 @@
+
+
+<div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="20px" >
+   <span fxFlex="40" >{{question.question}}</span>
+   <div fxFlex="60" fxLayout="column"  fxLayoutAlign="center right">
+  
+        <mat-radio-group
+  fxLayout="row" fxFlexFill fxLayoutAlign="space-evenly center"
+ aria-labelledby="ppe-radio-group-label"
+ class="example-radio-group"
+ [(ngModel)]="question.answer"> 
+   <mat-radio-button 
+   class="example-radio-button" 
+   *ngFor="let choice of choices" 
+   [value]="choice">
+ </mat-radio-button>
+</mat-radio-group>
+
+    <div div fxLayout="row" fxFlexFill fxLayoutAlign="space-evenly center" >
+        <span style="margin-left:-10px;"><strong>yes</strong></span>
+        <span></span>
+        <span><strong>not sure</strong></span>
+        <span></span>
+        <span><strong>no</strong></span>
+    </div>
+   </div>
+  </div>
+
+<!-- 
+  <mat-radio-group
+  fxLayout="row" 
+  
+ aria-labelledby="ppe-radio-group-label"
+ class="example-radio-group"
+ [(ngModel)]="question.answer"> 
+   <mat-radio-button 
+   class="example-radio-button" 
+   *ngFor="let choice of choices" 
+   [value]="choice">
+ </mat-radio-button>
+</mat-radio-group> -->
+
+
+  
+

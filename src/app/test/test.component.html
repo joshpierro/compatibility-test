@@ -1,0 +1,9 @@
+<section class="ppe-title"><h2>This questionnaire will help you evaluate yourself and others to see if you're compatible.</h2></section>
+
+
+
+<mat-card  class="ppe-question-container" *ngFor="let question of questions">
+    <app-question [question]="question">
+    </app-question>
+</mat-card>
+
